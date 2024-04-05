@@ -1,6 +1,6 @@
-import { useTheme } from "@/app/providers/ThemeProvider";
-import { IPaginationProps } from "../../model/types";
-import styles from "./styles.module.css";
+import { useTheme } from '@/app/providers/ThemeProvider';
+import { IPaginationProps } from '../../model/types';
+import styles from './styles.module.css';
 
 const PaginationButtons = ({
   totalPages,
@@ -19,7 +19,7 @@ const PaginationButtons = ({
         onClick={handlePreviousPage}
         className={styles.arrow}
       >
-        {"<"}
+        {'<'}
       </button>
       <div className={styles.list}>
         {[...Array(totalPages)].map((_, index) => {
@@ -41,7 +41,7 @@ const PaginationButtons = ({
         onClick={handleNextPage}
         className={styles.arrow}
       >
-        {">"}
+        {'>'}
       </button>
     </div>
   );
