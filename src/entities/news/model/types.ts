@@ -1,4 +1,4 @@
-import { CategoriesType } from '@/entities/category';
+import { CategoriesType } from "@/entities/category";
 
 export interface INews {
   author: string;

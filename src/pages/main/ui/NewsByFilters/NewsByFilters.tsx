@@ -1,12 +1,12 @@
-import { useAppDispatch, useAppSelector } from '@/app/appStore';
-import NewsList from '@/widgets/news/ui/NewsList/NewsList';
-import PaginationWrapper from '@/features/pagination/ui/Pagination/Pagination';
-import { TOTAL_PAGES } from '@/shared/constants/constants';
-import { useDebounce } from '@/shared/hooks/useDebounce';
-import { setFilters } from '@/entities/news/model/newsSlice';
-import { useGetNewsQuery } from '@/entities/news/api/newsApi';
-import NewsFilters from '../NewsFilters/NewsFilters';
-import styles from './styles.module.css';
+import { useAppDispatch, useAppSelector } from "@/app/appStore";
+import NewsList from "@/widgets/news/ui/NewsList/NewsList";
+import PaginationWrapper from "@/features/pagination/ui/Pagination/Pagination";
+import { TOTAL_PAGES } from "@/shared/constants/constants";
+import { useDebounce } from "@/shared/hooks/useDebounce";
+import { useGetNewsQuery } from "@/entities/news/api/newsApi";
+import { setFilters } from "@/entities/news/model/newsSlice";
+import NewsFilters from "../NewsFilters/NewsFilters";
+import styles from "./styles.module.css";
 
 const NewsByFilters = () => {
   const dispatch = useAppDispatch();
@@ -24,7 +24,7 @@ const NewsByFilters = () => {
   const handleNextPage = () => {
     if (filters.page_number < TOTAL_PAGES) {
       dispatch(
-        setFilters({ key: 'page_number', value: filters.page_number + 1 })
+        setFilters({ key: "page_number", value: filters.page_number + 1 })
       );
     }
   };
@@ -32,13 +32,13 @@ const NewsByFilters = () => {
   const handlePreviousPage = () => {
     if (filters.page_number > 1) {
       dispatch(
-        setFilters({ key: 'page_number', value: filters.page_number - 1 })
+        setFilters({ key: "page_number", value: filters.page_number - 1 })
       );
     }
   };
 
   const handlePageClick = (pageNumber: number) => {
-    dispatch(setFilters({ key: 'page_number', value: pageNumber }));
+    dispatch(setFilters({ key: "page_number", value: pageNumber }));
   };
 
   return (

@@ -1,8 +1,8 @@
-import { useTheme } from '@/app/providers/ThemeProvider';
-import { IPaginationProps } from '../../model/types';
-import styles from './styles.module.css';
+import { useTheme } from "@/app/providers/ThemeProvider";
+import { IPaginationProps } from "../../model/types";
+import styles from "./styles.module.css";
 
-const Pagination = ({
+const PaginationButtons = ({
   totalPages,
   handlePreviousPage,
   handleNextPage,
@@ -10,7 +10,6 @@ const Pagination = ({
   currentPage,
 }: IPaginationProps) => {
   const { isDark } = useTheme();
-
   return (
     <div
       className={`${styles.pagination} ${isDark ? styles.dark : styles.light}`}
@@ -20,7 +19,7 @@ const Pagination = ({
         onClick={handlePreviousPage}
         className={styles.arrow}
       >
-        {'<'}
+        {"<"}
       </button>
       <div className={styles.list}>
         {[...Array(totalPages)].map((_, index) => {
@@ -42,10 +41,10 @@ const Pagination = ({
         onClick={handleNextPage}
         className={styles.arrow}
       >
-        {'>'}
+        {">"}
       </button>
     </div>
   );
 };
 
-export default Pagination;
+export default PaginationButtons;

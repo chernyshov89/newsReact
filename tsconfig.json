@@ -24,6 +24,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "shared/interfaces/types/vite-end.d.ts"],
+  "include": ["src", "shared/interfaces/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
