@@ -1,8 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
-import { IFilters } from '../../../shared/interfaces';
-import { PAGE_SIZE } from '../../../shared/constants/constants';
-import { INews } from '..';
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+import { IFilters } from "../../../shared/interfaces";
+import { PAGE_SIZE } from "../../../shared/constants/constants";
+import { INews } from "..";
 
 interface State {
   news: INews[];
@@ -15,18 +15,17 @@ const initialState: State = {
     page_number: 1,
     page_size: PAGE_SIZE,
     category: null,
-    keywords: '',
+    keywords: "",
   },
 };
 
 export const newsSlice = createSlice({
-  name: 'news',
+  name: "news",
   initialState,
   reducers: {
     setNews: (state, action: PayloadAction<INews[]>) => {
       state.news = action.payload;
     },
-
     setFilters: (
       state,
       action: PayloadAction<{ key: string; value: string | null | number }>

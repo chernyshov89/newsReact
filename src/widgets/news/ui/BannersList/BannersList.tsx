@@ -1,6 +1,6 @@
-import { INews, NewsBanner } from '@/entities/news';
-import withSkeleton from '@/shared/hocs/withSkeleton';
-import styles from './styles.module.css';
+import { INews, NewsBanner } from "@/entities/news";
+import withSkeleton from "@/shared/hocs/withSkeleton";
+import styles from "./styles.module.css";
 
 interface Props {
   banners?: INews[] | null;
@@ -18,9 +18,9 @@ const BannersList = ({ banners }: Props) => {
 
 const BannersListWithSkeleton = withSkeleton<Props>(
   BannersList,
-  'banner',
+  "banner",
   10,
-  'row'
+  "row"
 );
 
 export default BannersListWithSkeleton;

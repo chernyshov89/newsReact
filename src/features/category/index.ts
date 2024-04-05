@@ -1,3 +1,3 @@
-import Categories from './ui/Categories/Categories';
+import Categories from "./ui/Categories/Categories";
 
 export { Categories };

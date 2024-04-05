@@ -1,5 +1,5 @@
-import { IPaginationProps } from '../../model/types';
-import PaginationButtons from '../PaginationButtons/PaginationButtons';
+import { IPaginationProps } from "../../model/types";
+import PaginationButtons from "../PaginationButtons/PaginationButtons";
 
 interface Props {
   children: React.ReactNode;

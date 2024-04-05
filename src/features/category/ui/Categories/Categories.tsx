@@ -1,6 +1,6 @@
-import { ForwardedRef, forwardRef } from 'react';
-import styles from './styles.module.css';
-import { CategoriesType } from '@/entities/category';
+import { ForwardedRef, forwardRef } from "react";
+import styles from "./styles.module.css";
+import { CategoriesType } from "@/entities/category";
 
 interface Props {
   categories: CategoriesType[];
@@ -39,6 +39,6 @@ const Categories = forwardRef(
   }
 );
 
-Categories.displayName = 'Categories';
+Categories.displayName = "Categories";
 
 export default Categories;

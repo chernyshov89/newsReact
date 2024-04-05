@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import styles from './styles.module.css';
+import React, { useRef } from "react";
+import styles from "./styles.module.css";
 
 interface Props {
   children: React.ReactElement;

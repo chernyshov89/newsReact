@@ -1,5 +1,5 @@
-import { useTheme } from '@/app/providers/ThemeProvider';
-import { themeIcons } from '@/shared/assets';
+import { useTheme } from "@/app/providers/ThemeProvider";
+import { themeIcons } from "@/shared/assets";
 
 const ThemeButton = () => {
   const { isDark, toggleTheme } = useTheme();

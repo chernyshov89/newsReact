@@ -1,7 +1,7 @@
-import { INews } from '../..';
-import { formatTimeAgo } from '@/shared/helpers/formatTimeAgo';
-import styles from './styles.module.css';
-import Image from '@/shared/ui/Image/Image';
+import { formatTimeAgo } from "@/shared/helpers/formatTimeAgo";
+import { INews } from "../..";
+import styles from "./styles.module.css";
+import Image from "@/shared/ui/Image/Image";
 
 interface Props {
   item: INews;
