@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+import { CategoriesType } from '../../entities/category/model/types';
+
+=======
+>>>>>>> fc4b0267e1ce6042bea650853aa3d4dc2bc74fb4
 export type SkeletonType = 'banner' | 'item';
 export type DirectionType = 'row' | 'column';
 
