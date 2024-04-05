@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useContext, useState } from 'react';
+import { ReactNode, createContext, useContext, useState } from "react";
 
 interface IThemeContext {
   isDark: boolean;
@@ -11,7 +11,7 @@ export const useTheme = () => {
   const context = useContext(ThemeContext);
 
   if (!context) {
-    throw new Error('context error');
+    throw new Error("context error");
   }
 
   return context;

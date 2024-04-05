@@ -1,6 +1,6 @@
-import { ThemeProvider } from '@/app/providers/ThemeProvider';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ThemeProvider } from './providers/ThemeProvider';
 import { Provider } from 'react-redux';
 import { store } from './appStore';
 import BaseLayout from './layouts/BaseLayout';
