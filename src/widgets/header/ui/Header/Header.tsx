@@ -12,7 +12,7 @@ const Header = () => {
     >
       <div className={styles.info}>
         <Link to={'/'}>
-          <h1 className={styles.title}>NEWS REACTIFY</h1>
+          <h1 className={styles.title}>NEWS REACT</h1>
         </Link>
         <p className={styles.date}>{formatDate(new Date())}</p>
       </div>
